@@ -1,18 +1,169 @@
 \documentclass{article}
 \begin{document}
 
-\section*{2002}
-\section*{A}
-\section*{B}
-\section*{D}
-
 \section*{2003}
 \section*{A}
 
 câu 5: cho $x,y,z$ là các số thực dương thỏa mãn $x+y+z\leq1$. Chứng minh rằng:
 \[\sqrt{x^2+\frac{1}{x^2}}+\sqrt{y^2+\frac{1}{y^2}}+\sqrt{z^2+\frac{1}{z^2}}\geq\sqrt{82}\]
+lời giải: 
+\[x^2+\frac{1}{81x^2}\geq\frac{2}{9}\Rightarrow x^2+\frac{1}{x^2}\geq\frac{2}{9}+\frac{80}{81x^2}\]
+\[\Rightarrow \sqrt{x^2+\frac{1}{x^2}}\geq\sqrt{\frac{2}{9}+\frac{80}{81x^2}}\]
+
+dùng bất đẳng thức Bunyakovsky:
+\[(a_1^2+a_2^2+...+a_n^2).(b_1^2+b_2^2+...+b_n^2)\geq(a_1.b_1+a_2.b_2+...+a_n.b_n)^2\]
+cho $b_1=1, b_2=1, ..., b_n=1$ ta có:
+\[n.(a_1^2+a_2^2+...+a_n^2)\geq(a_1+a_2+...+a_n)^2\]
+\[\Rightarrow n.(t_1+t_2+...+t_n)\geq(\sqrt{t_1}+\sqrt{t_2}+...+\sqrt{t_n})^2\]
+\[\Rightarrow \sqrt{t_1+t_2+...+t_n}\geq\frac{1}{\sqrt{n}}.(\sqrt{t_1}+\sqrt{t_2}+...+\sqrt{t_n})\]
+
+áp dụng bất đẳng thức trên cho $\frac{2}{9}, \frac{2}{81x^2},..., \frac{2}{81x^2}$, ta có:
+\[\sqrt{\frac{2}{9}+\frac{80}{81x^2}}\geq\frac{1}{\sqrt{41}}.(\sqrt{\frac{2}{9}}+40.\sqrt{\frac{2}{81x^2}})\]
+\[=\frac{1}{\sqrt{41}}.(\frac{\sqrt{2}}{3}+\frac{40\sqrt{2}}{9}.\frac{1}{x})\]
+tương tự cho $y,z$, từ đó ta có:
+\[P\geq\frac{1}{\sqrt{41}}.(\sqrt{2}+\frac{40\sqrt{2}}{9}.(\frac{1}{x}+\frac{1}{y}+\frac{1}{z}))\]
+\[\geq\frac{1}{\sqrt{41}}.(\sqrt{2}+\frac{40\sqrt{2}}{9}.\frac{9}{x+y+z})\geq\sqrt{82}\]
 
 \section*{B}
+
+
+
+
+
+
+câu 4:
+\newline
+1) tìm min, max của hàm số 
+\[x+\sqrt{4-x^2}\]
+
+lời giải:
+đặt $y=\sqrt{4-x^2}$, khi đó $x\in [ -2,2] , y\in [ 0,2], x^2+y^2=4, f=x+y$
+\[f^2=4+2xy\leq 8\Rightarrow f\leq2\sqrt{2}\]
+
+vậy max của f la $2\sqrt{2}$
+\newline
+giả sử $x\leq0$, khi đó
+\[f^2=4+2xy\leq4\]
+suy ra min của f là -2 khi $x\leq0$, 
+\newline
+với $x\geq0$, dễ thấy f luôn lớn hơn 0
+\newline
+vậy min của f là -2
+
+
+\section*{D}
+
+\section*{2005}
+\section*{A}
+
+câu 5: cho $x,y,z$ là các số dương thỏa mãn $\frac{1}{x}+\frac{1}{y}+\frac{1}{z}=4$, chứng minh rằng:
+\[\frac{1}{2x+y+z}+\frac{1}{x+2y+z}+\frac{1}{x+y+2z}\leq1\]
+
+lời giải: áp dụng
+\[\frac{1}{a+b+c+d}\leq\frac{1}{16}.(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d})\]
+ta có:
+\[\frac{1}{2x+y+z}\leq\frac{1}{16}.(\frac{2}{x}+\frac{1}{y}+\frac{1}{z})\]
+tương tự cho $y,z$ và cộng từng vế ta được:
+\[P\leq\frac{1}{4}.(\frac{1}{x}+\frac{1}{y}+\frac{1}{z})=1\]
+
+\section*{B}
+
+
+câu 5: chứng minh rằng với mọi $x\in R $ ta có:
+
+\[(\frac{12}{5})^x+(\frac{15}{4})^x+(\frac{20}{3})^x\geq3^x+4^x+5^x\]
+
+lời giải: áp dụng
+
+
+
+
+
+
+\[\frac{ab}{c}+\frac{bc}{a}+\frac{ca}{b}\geq a+b+c\]
+
+cho $3^x, 4^x, 5^x$
+
+\section*{D}
+
+câu 5: cho các số dương $x,y,z$ thỏa $xyz=1$, chứng minh rằng:
+
+\[\frac{\sqrt{1+x^3+y^3}}{xy}+\frac{\sqrt{1+y^3+z^3}}{yz}+\frac{\sqrt{1+z^3+x^3}}{zx}\geq 3\sqrt{3}\]
+
+lời giải:
+
+
+\[1+x^3+y^3\geq3xy\Rightarrow \frac{\sqrt{1+x^3+y^3}}{xy}\geq \frac{\sqrt{3}}{\sqrt{xy}}\]
+\[\Rightarrow P\geq \sqrt{3}.(\frac{1}{\sqrt{xy}}+\frac{1}{\sqrt{yz}}+\frac{1}{\sqrt{zx}})\geq3\sqrt{3}\]
+
+\section*{2006}
+\section*{A}
+
+câu 4:
+\newline
+2) cho hai số thực $x,y$ thỏa
+
+
+
+
+
+
+
+\[(x+y)xy=x^2+y^2-xy\]
+tìm giá trị lớn nhất của $\frac{1}{x^3}+\frac{1}{y^3}$
+
+lời giải:
+
+
+
+
+
+
+
+đặt $a=\frac{1}{x}, b=\frac{1}{y}$, khi đó:
+
+
+
+
+
+
+\[(\frac{1}{a}+\frac{1}{b}).\frac{1}{ab}=\frac{1}{a^2}+\frac{1}{b^2}-\frac{1}{ab}\]
+\[\Rightarrow a+b=a^2+b^2-ab\Rightarrow a+b+3ab=(a+b)^2\]
+
+đặt $t=a+b$, khi đó $ab=\frac{t^2-t}{3}$
+ta có $(a+b)^2\geq4ab\Rightarrow t^2\geq\frac{4}{3}.(t^2-t)$
+\[\Rightarrow 0\leq t \leq 4 \Rightarrow 0\leq a+b \leq 4\]
+
+vậy $P=a^3+b^3=(a^2+b^2)(a+b)-ab(a+b)=(a+b+ab)(a+b)-ab(a+b)=(a+b)^2\leq16$
+
+\section*{B}
+
+
+câu 4:
+\newline
+2) cho số thực $x,y$ tìm giá trị nhỏ nhất của
+
+
+
+
+
+
+
+
+\[\sqrt{(x-1)^2+y^2}+\sqrt{(x+1)^2+y^2}+|y-2| \]
+
+lời giải: áp dụng BĐT Minkowski
+\[\sqrt{a^2+b^2}+\sqrt{c^2+d^2}\geq\sqrt{(a+c)^2+(b+d)^2}\]
+dấu = xảy ra khi $ad=bd$
+
+
+
+
+
+
+\[\sqrt{(x-1)^2+y^2}+\sqrt{(x+1)^2+y^2}\geq 2\sqrt{}\]
+
+
 \section*{D}
 
 \section*{2012}
