@@ -102,30 +102,12 @@ lời giải:
 câu 4:
 \newline
 2) cho hai số thực $x,y$ thỏa
-
-
-
-
-
-
-
 \[(x+y)xy=x^2+y^2-xy\]
 tìm giá trị lớn nhất của $\frac{1}{x^3}+\frac{1}{y^3}$
 
 lời giải:
 
-
-
-
-
-
-
 đặt $a=\frac{1}{x}, b=\frac{1}{y}$, khi đó:
-
-
-
-
-
 
 \[(\frac{1}{a}+\frac{1}{b}).\frac{1}{ab}=\frac{1}{a^2}+\frac{1}{b^2}-\frac{1}{ab}\]
 \[\Rightarrow a+b=a^2+b^2-ab\Rightarrow a+b+3ab=(a+b)^2\]
@@ -138,32 +120,134 @@ vậy $P=a^3+b^3=(a^2+b^2)(a+b)-ab(a+b)=(a+b+ab)(a+b)-ab(a+b)=(a+b)^2\leq16$
 
 \section*{B}
 
-
 câu 4:
 \newline
 2) cho số thực $x,y$ tìm giá trị nhỏ nhất của
-
-
-
-
-
-
-
 
 \[\sqrt{(x-1)^2+y^2}+\sqrt{(x+1)^2+y^2}+|y-2| \]
 
 lời giải: áp dụng BĐT Minkowski
 \[\sqrt{a^2+b^2}+\sqrt{c^2+d^2}\geq\sqrt{(a+c)^2+(b+d)^2}\]
-dấu = xảy ra khi $ad=bd$
+dấu = xảy ra khi $ad=bc$
+
+\[\sqrt{(x-1)^2+y^2}+\sqrt{(x+1)^2+y^2}\geq 2\sqrt{1+y^2}\]
+\[\Rightarrow P\geq 2\sqrt{1+y^2}+|y-2|\]
+
+khảo sát hàm số này, ta thấy min đạt được khi $y=\frac{1}{\sqrt{3}}$
+vậy min của P là $2+\sqrt{3}$
+
+\section*{D}
+
+\section*{2007}
+\section*{A}
+
+câu 4
+\newline
+2) cho các số dương $x,y,z$ thỏa $xyz=1$, tìm giá trị nhỏ nhất:
+
+\[\frac{x^2(y+z)}{y\sqrt{y}+2z\sqrt{z}}+\frac{y^2(z+x)}{z\sqrt{z}+2x\sqrt{x}}+\frac{z^2(x+y)}{x\sqrt{x}+2y\sqrt{y}}\]
+
+lời giải: 
+
+\[\frac{x^2(y+z)}{y\sqrt{y}+2z\sqrt{z}}\geq\frac{2x^2.\sqrt{yz}}{y\sqrt{y}+2z\sqrt{z}}\]
+\[=\frac{2x\sqrt{x}}{y\sqrt{y}+2z\sqrt{z}}\]
+\[\Rightarrow P\geq\frac{2x\sqrt{x}}{y\sqrt{y}+2z\sqrt{z}}+\frac{2y\sqrt{y}}{z\sqrt{z}+2x\sqrt{x}}+\frac{2z\sqrt{z}}{x\sqrt{x}+2y\sqrt{y}}\]
+
+đặt $a=x\sqrt{x},b=y\sqrt{y},c=z\sqrt{z}$, khi đó:
+
+\[P\geq2(\frac{a}{b+2c}+\frac{b}{c+2a}+\frac{c}{a+2b})\]
+đặt $m=b+2c,n=c+2a,p=a+2b$, khi đó:
+
+\[a=\frac{-2m + 4n + p}{9}, b=\frac{m - 2n + 4p}{9}, c=\frac{4m + n - 2p}{9}\]
+\[P\geq\frac{2}{9}.(\frac{-2m + 4n + p}{m}+\frac{m - 2n + 4p}{n}+\frac{4m + n - 2p}{p})\]
+\[=\frac{2}{9}.(\frac{p}{m}+\frac{m}{n}+\frac{n}{p}+4(\frac{n}{m}+\frac{p}{n}+\frac{m}{p})-6)\geq2\]
+vậy giá trị nhỏ nhất của P là 2.
+
+\section*{B}
+
+câu 4
+\newline
+2) cho các số dương $x,y,z$, tìm giá trị nhỏ nhất
+
+\[x(\frac{x}{2}+\frac{1}{yz}) + y(\frac{y}{2}+\frac{1}{zx}) + z(\frac{z}{2}+\frac{1}{xy})\]
+lời giải:
+
+\[x(\frac{x}{2}+\frac{1}{yz}) = x^2(\frac{1}{2}+\frac{1}{xyz})\]
+\[\Rightarrow P=(\frac{1}{2}+\frac{1}{xyz})(x^2+y^2+z^2)\geq (\frac{1}{2}+\frac{1}{xyz}).3\sqrt[3]{x^2y^2z^2}\]
+đặt $t=\sqrt[3]{xyz}$, ta được:
+
+\[P\geq 3t^2(\frac{1}{2}+\frac{1}{t^3})=\frac{3}{2}(t^2+\frac{1}{t}+\frac{1}{t})\geq\frac{9}{2}\]
+\section*{D}
+
+
+câu 4
+\newline
+2) cho $a\geq b >0$, chứng minh rằng:
+
+\[(2^a+\frac{1}{2^a})^b \leq (2^b+\frac{1}{2^b})^a \]
+lời giải: 
+
+\[(2^a+\frac{1}{2^a})^b \leq (2^b+\frac{1}{2^b})^a \]
+\[\Leftrightarrow \frac{1}{a}.ln(2^a+\frac{1}{2^a}) \leq \frac{1}{b}.ln(2^b+\frac{1}{2^b})\]
+đặt $f(x)=\frac{1}{x}.ln(2^x+\frac{1}{2^x})$
+đặt $u=\frac{1}{x}, v=ln(2^x+\frac{1}{2^x})$
+\[f'(x) = (uv)'=u'v + uv'\]
+
+\[u'v=-\frac{1}{x^2}.ln(2^x+\frac{1}{2^x})\leq-\frac{1}{x^2}.ln(2^x)=-\frac{ln(2)}{x}\]
+đặt $w=2^x+\frac{1}{2^x}$
+\[w'=ln(2).2^x-\frac{ln(2)}{2^x}\]
+\[ln(w)'=\frac{w'}{w}=ln(2).\frac{4^x-1}{4^x+1}\]
+\[uv'=\frac{ln(2)}{x}.\frac{4^x-1}{4^x+1}\leq \frac{ln(2)}{x}\]
+
+vậy $f'(x)=u'v + uv' \leq 0 \Rightarrow f(a)\leq f(b)$ 
+
+
+\section*{2008}
+\section*{A}
+\section*{B}
+
+câu 4
+\newline
+2) cho $x,y$ thỏa $x^2+y^2=1$. tìm min,max
+
+\[\frac{2(x^2+6xy)}{1+2xy+2y^2}\]
+lời giải:
+
+\[\frac{2(x^2+6xy)}{1+2xy+2y^2} = \frac{2(x^2+6xy)}{x^2+2xy+3y^2}\]
+giả sử $\frac{2(x^2+6xy)}{x^2+2xy+3y^2}\leq k$
+\[\Rightarrow (k-2)x^2+3ky^2+(2k-12)xy\geq 0\]
+tìm k để BDT trên dạng $(a-b)^2\geq0$, ta được $k=3$
+vậy max là 3
+
+giả sử $\frac{2(x^2+6xy)}{x^2+2xy+3y^2}\geq k$
+\[\Rightarrow (2-k)x^2-3ky^2+(12-2k)xy\geq 0\]
+tìm k để BDT trên dạng $(a+b)^2\geq0$, ta được $k=-6$
+vậy min là -6
+
+\section*{D}
+
+câu 4
+\newline
+2) cho hai số không âm $x,y$, tìm giá trị lớn nhất và giá trị nhỏ nhất của:
+
+\[\frac{(x-y)(1-xy)}{(1+x)^2(1+y)^2}\]
+lời giải: đặt $a=1+x,b=1+y$
+
+\[P=\frac{(a-b)(a+b-ab)}{a^2b^2}=\frac{1}{b^2}-\frac{1}{b}-(\frac{1}{a^2}-\frac{1}{a})\]
+xét hàm số $f(x)=x^2-x$ trên $(0,1]$ thì $-\frac{1}{4}\leq f(x) \leq 0$
+
+\[\Rightarrow -\frac{1}{4}\leq f(\frac{1}{b})-f(\frac{1}{a})\leq \frac{1}{4}\]
+
+
+\section*{2009}
+\section*{A}
+
+câu 5: cho các số dương $x,y,z$ thỏa $x(x+y+z)=3yz$, chứng minh rằng:
+\[(x+y)^3+(x+z)^3 +3(x+y)(x+z)(y+z)\leq 5(y+z)^3\]
 
 
 
-
-
-
-\[\sqrt{(x-1)^2+y^2}+\sqrt{(x+1)^2+y^2}\geq 2\sqrt{}\]
-
-
+\section*{B}
 \section*{D}
 
 \section*{2012}
