@@ -18,6 +18,8 @@ các chữ số từ 0 đến 9 đều có thể là chữ số hàng đơn vị
 6. chọn hai số nguyên tố khác nhau giữa 4 và 18. lấy tích của chúng trừ đi tổng sẽ được số nào sau đây:
 \[\{22,60,119,180,231\}\]
 
+7. có bao nhiêu số nguyên dương b để cho $\log_{b}{729}$ cũng là số nguyên dương?
+
 -------------------separator-------------------
 
 1. tấc cả ước số của 2001 là
@@ -47,13 +49,50 @@ ta có thể thấy chữ số cuối cùng là 6
 5. ta có:
 \[2-x=p \Leftrightarrow x-p=2-2p\]
 
-
-
-
-
-
-
 6. gọi hai số đó là a,b. ta có:
-\[\]
+\[a,b \in \{5, 7, 11, 13, 17\}\]
+\[S=ab-a-b=(a-1)(b-1)-1\]
+đặt $x=a-1, y=b-1$, khi đó:
+\[x,y \in \{4, 6, 10, 12, 16\}\]
+\[S=xy-1\]
+ta kiểm tra các số $\{22, 60, 119, 180, 231\}$ có thể là $xy-1$ hay không tức là 
+các số $\{23, 61, 120, 181, 232\}$ có thể là $xy$ hay không
+\newline
+$\{23, 61, 181\}$ không thể vì xy là số chẵn
+\newline
+120 có thể vì $120=10 \times 12$
+\newline
+232 không thể vì 232 chia hết cho 29 nhưng xy thì không
+\newline
+vậy đáp án ban đầu là $\{119\}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. đặt $x=\log_{b}{729}$, khi đó:
+\[b^x=729 \Rightarrow b^x=3^6\]
+dựa vào bổ đề 1, ta thấy b chỉ có một ước số nguyên tố duy nhất là 3, do đó $b=3^a$, khi đó
+\[3^{ax}=3^6 \Rightarrow ax=6\]
+do đó a chỉ có thể là $\{1, 2, 3, 6\}$, khi đó b có thể có 4 giá trị
+
+-------------------separator-------------------
+
+bổ đề 1: cho p là số nguyên tố và $3^n$ chia hết cho p, chứng minh rằng $p=3$
+Chứng minh: giả sử $p\neq 3$, khi đó $p=3k+1$ hoặc $p=3k+2$, khi đó
+\[3^n=ap=3ak+a\]
+hoặc
+\[3^n=ap=3ak+2a\]
+trong cả hai trường hợp dễ thấy a phải chia hết cho 3
+chia cả hai vế cho 3 và lặp lại cuối cùng ta có được
+$1=ap$ hoặc $3^n=p$, cả hai trường hợp đều vô lý, vậy $p=3$
 
 \end{document}
